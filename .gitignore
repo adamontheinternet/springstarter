@@ -1,7 +1,6 @@
-.classpath
-.project
-.settings
 .gradle
-bin
-build
-target
+/build
+/gradle
+/lib
+/META-INF
+/WEB-INF
