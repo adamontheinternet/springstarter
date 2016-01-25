@@ -1,8 +1,18 @@
-apply plugin: 'java'
-apply plugin: 'application'
-apply plugin: 'idea'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.2.RELEASE")
+    }
+}
 
-mainClassName = 'hello.SampleController'
+apply plugin: 'java'
+//apply plugin: 'application'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+// mainClassName = 'hello.Application'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
