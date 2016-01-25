@@ -11,6 +11,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * Created by alaplante on 1/25/16.
  */
 @RestController
+@RequestMapping(value="/greetings")
 public class GreetingController {
     private final static String template = "Hello there %s";
     private final AtomicLong counter = new AtomicLong();
